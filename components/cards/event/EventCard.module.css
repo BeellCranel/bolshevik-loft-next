@@ -1,0 +1,71 @@
+.card {
+  width: 425px;
+  max-width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0.6rem 2rem;
+}
+
+.title {
+  font-size: calc(16px + 6 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.date {
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+}
+
+.cardHot {
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.5s ease;
+}
+
+.cardHot:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+@media screen and (min-width: 624px) {
+  .card {
+    width: calc((100% / 2) - (2rem / 2));
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .card {
+    width: calc((100% / 3) - (4rem / 3));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    width: calc((100% / 4) - (6rem / 4));
+  }
+}
